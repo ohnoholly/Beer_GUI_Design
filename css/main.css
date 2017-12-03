@@ -1,0 +1,1074 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+@font-face{
+    font-family: rapscallion;
+    src: local('/../fonts/ryan-splint_rapscallion/RAPSCALL.TTF') format('tff');
+    
+}
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+.undo_redo{
+    position: relative;
+    top: 45px;
+    right: -650px;
+    width: 30px;
+    height: 30px;
+}
+#btn_redo{
+    -moz-transform: scale(-1, 1);
+-webkit-transform: scale(-1, 1);
+-o-transform: scale(-1, 1);
+-ms-transform: scale(-1, 1);
+transform: scale(-1, 1);
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+    background-color: #d2d2d2;
+}
+/*.page-wrap {
+    min-height: 100%;
+    !* equal to footer height *!
+    margin-bottom: -60px;
+}
+.page-wrap:after {
+    content: "";
+    display: block;
+}
+.site-footer, .page-wrap:after {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    !*border-top: 1px solid #e3e3e3;*!
+}
+.site-footer {
+    background-color: #f5f5f5;
+    vertical-align: middle;
+    text-align: center;
+}*/
+
+/*Common css for navbar*/
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /*background-color: #333;*/
+    text-align: center;
+    /*height: 100%;*/
+    /*position: fixed;
+    overflow: hidden;*/
+}
+
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/*Vertical Navbar*/
+/*        li a{
+            display: block;
+            color: black;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        !* Change the link color on hover *!
+        li a:hover {
+            background-color: #555;
+            color: white;
+        }
+
+        /*Horizontal Navbar*/
+
+#navbar li{
+    /*float: left;*/
+    float:right;
+}
+
+#beer_svg{
+
+    width: 59px;
+    position: absolute;
+    top: -356px;
+    left: 3.5%;
+    transform: rotate(-22deg);
+    
+}
+#navbar li a ,.dropbtn{
+    display: block;
+    padding: 14px 16px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+#navbar li a:hover, .dropbtn:hover {
+    background-color: #c0c0c0;
+}
+
+#navbar li.dropdown{
+    display:inline-block;
+
+}
+
+.dropdown-content{
+    display:none;
+    position: absolute;
+    right: 50px;
+    background-color: #f9f9f9;
+    min-width: 60px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*header{
+    height: 100px;
+    !*background-color: black;*!
+    !*color: white;*!
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}*/
+
+.header{
+    height: 110px;
+    
+    /*background-color: black;*/
+    /*color: white;*/
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #f5f5f5;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    z-index: 150;
+}
+
+.footer>p{
+    position: relative;
+    text-align: center;
+    top: 25px;
+}
+
+.content{
+    margin: 10px 20px;
+    padding: 5px;
+}
+
+.content_width{
+    width: 40%;
+}
+
+.flagdiv_width{
+    width: 50%;
+}
+
+.margin_top{
+    margin-top: 5px;
+}
+
+.margin_bottom{
+    margin-bottom: 5px;
+}
+
+.left_pane{
+    width: 94.5%;
+    margin-right: 10px;
+}
+
+.float_left{
+    float: left;
+}
+
+
+#div_buy{
+    
+    position: relative;
+    bottom: -48px;
+    z-index: -10;
+    
+}
+
+.right_pane{
+    position: absolute;
+    top: 112px;
+    right: 0%;
+    display: none;
+    width: 30%;
+    margin-left: 10px;
+    z-index: 20;
+}
+
+.float_right{
+    float: right;
+}
+
+.well {
+    
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+}
+
+.login{
+    width:auto;
+    color: black;
+}
+
+.input-sm {
+    height: 20px;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4%;
+}
+
+.btn_success{
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+.btn_logout{
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+form{
+    text-align: right;
+}
+
+label{
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.shadow{
+    box-shadow: 5px 5px 5px #888888;
+}
+
+.about-center{
+    width: 60%;
+    margin: auto;
+}
+
+.about-section-height{
+    height: 100px;
+}
+
+#L_O{
+    height: auto;
+    width: auto;
+    max-height: 100px;
+    max-width: 100px;
+}
+
+#mail{
+    margin-top: 20px;
+}
+
+#flags li{
+    float: left;
+    margin-top: 5px;
+    padding: 1px;
+    position: relative;
+    z-index: 100;
+}
+
+#links{
+    text-align: center;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        
+        page-break-after: avoid;
+    }
+    
+    }
+
+
+#headline{
+    position: relative;
+    right: -78px;
+}
+
+.beerleft{
+    position: absolute;
+    left: 24px;
+    bottom: 6px;
+}
+
+.count{
+    position: absolute;
+    right: 20px;
+    top: 144px;
+}
+.beer_div {
+
+    border-radius: 2px;
+    margin-right: 6px;
+    margin-bottom: 5px;
+    box-shadow: 2px 2px 12px -3px;
+    text-align: center;
+    position: relative;
+    width: 214px;
+    height: 175px;
+    /* max-height: 129px; */
+    /* border: 1px dashed; */
+    display: inline-table;
+}
+
+.beer_div:hover{
+    opacity: 0.6;
+}
+.beer_div > p{
+    font-family: 'Pirata One', cursive;
+    font-size: 23px;
+}
+.beer_div > label{
+    font-size: 13px;
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+
+#info_block{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    opacity: 0.5;
+    filter: blur(30px);
+    top: 0px;
+    z-index: 101;
+}
+
+
+
+.dummy_div{
+    position: absolute;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+    top: -3px;
+    z-index: 1;
+}
+
+.beer_info{
+    background-color: #e3e3e3;
+    position: fixed;
+    top: 200px;
+    left: 600px;
+    width: 250px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 5px 5px 17px -2px;
+    padding: 73px 21px 21px 21px;
+    z-index: 1000;
+}
+
+.btn_close{
+    position: fixed;
+    left: 863px;
+    top: 208px;
+}
+
+
+.beer_info>p{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#name1{
+    font-family: 'Pirata One', cursive;
+    font-size: larger;
+    top: -47px;
+    padding: 25px;
+}
+
+.beer_info>label{
+    font-family: 'Josefin Sans', bold;
+}
+
+.beer_wine{
+    position: fixed;
+    top: 215px;
+    left: 714px;
+    width: 75px;
+    height: 75px;
+}
+
+.btn_beer_info{
+    position: absolute;
+    left: 190px;
+    top: -15px;
+    z-index: 100;
+    width: 30px;
+    height: 50px;
+}
+
+#welcome {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+h2{
+     font-family: 'Pirata One';
+    font-size: 45px;
+    width: 700px;   
+}
+
+#label_total{
+    
+    position: relative;
+    left: 37%;
+    top: 27px;
+    font-family: 'Josefin Sans', bold;
+    font-size: 22px;
+    
+}
+
+.beer_name {
+    font-family: 'Pirata One';
+    position: relative;
+    float: left;
+    top: 21px;
+    font-size: 23px;
+    right: -14px;
+}
+
+#total {
+    left: 52%;
+    position: relative;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 23px;
+    top: -9px;
+    width: 30px;
+}
+
+
+#btn_purchase{
+    position: relative;
+    float: right;
+    bottom: 32px;
+    font-family: 'Josefin Sans', bold;
+    font-size: 18px;
+    top: -44px;
+    left: -17px;
+    z-index: 3;
+}
+#purchase_form{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 400px;
+}
+.selected_article{
+    
+height: 66px;
+    border: dashed 1px;
+    float: left;
+    width: 100%;
+    
+}
+
+#selectit{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#notebook{
+
+    width: 99%;
+    left: 50%;
+    position: relative;
+    margin-left: -46%;
+}
+
+#div_selected_articles{
+    max-height: 430px;
+}
+.drink_type_name{
+    float: left;
+    background-color: inherit;
+    border: none;
+    border-color: transparent;
+    
+}
+#block{
+    width: 100%;
+    height: 100%;
+    /*background-color: red;*/
+    z-index: 19;
+    opacity: 0.6;
+    position: fixed;
+    display: none;
+    
+}
+.quantity{
+    font-family: 'Josefin Sans', sans-serif;
+    right: 36%;
+    top: 21px;
+    margin-left: 399px;
+    position: relative;
+
+}
+
+.btn_inc{
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 50px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 19px;
+    background: #000000;
+    padding: 0px 8px 0px 8px;
+    text-decoration: none;
+    position: relative;
+    top: -19px;
+    border: 0px;
+    position: relative;
+    top: -22px;
+    
+}
+
+.btn_inc:hover{
+    opacity: 0.6;
+}
+
+.btn_dec{
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 50px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 19px;
+    background: #000000;
+    padding: 0px 10px 0px 10px;
+    text-decoration: none;
+    text-align: center;
+    border: 0px;
+    position: relative;
+    left: -7%;
+    top: 9px;
+}
+.btn_dec:hover{
+    opacity: 0.6;
+}
+
+.increment{
+
+    position: relative;
+    left: 1%;
+    top: 1px;
+}
+.price{
+     position: relative;
+}
+.delete{
+    position: relative;
+    top: -4px;
+    right: 2%;
+    background: #000000;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    height: 26px;
+    width: 24px;
+    border: 0px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 15px;
+    /* padding: 4px 12px 8px 13px; */
+    text-decoration: none;
+    outline: 0px;
+}
+
+.delete:hover {
+  background: #ff0000;
+  background-image: -webkit-linear-gradient(top, #ff0000, #000000);
+  background-image: -moz-linear-gradient(top, #ff0000, #000000);
+  background-image: -ms-linear-gradient(top, #ff0000, #000000);
+  background-image: -o-linear-gradient(top, #ff0000, #000000);
+  background-image: linear-gradient(to bottom, #ff0000, #000000);
+  text-decoration: none;
+}
+
+p, label, svg, div {
+    cursor: default;
+      -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; 
+}
+
+button{
+    outline: 0;
+}
+/*Ipad Responsive Design*/
+
+@media only screen and (max-width: 1024px) {
+    body {
+        width: 100%;
+    }
+
+    #div_selected_articles {
+        max-height: 313px;
+    }
+
+    #div_buy{
+
+        position: relative;
+        bottom: -48px;
+        z-index: -10;
+
+    }
+
+    .selected_article {
+        height: 66px;
+        border: dashed 1px;
+        float: left;
+        width: 99%;
+    }
+
+    #headline {
+        position: relative;
+        right: -78px;
+        font-size: 34px;
+    }
+
+    .left_pane{
+        position: relative;
+        top: -25px;
+        width: 93%;
+    }
+
+
+    .right_pane{
+        position: absolute;
+        top: -11px;
+        left: 507px;
+        width: 435px;
+        display: none;
+    }
+
+    #loginform{
+        position: relative;
+        top: -38px;
+        right: -64px;
+    }
+
+    #phead {
+        position: absolute;
+        top: 43px;
+        right: 307px;
+    }
+
+    #uhead{
+        position: absolute;
+        left: 104px;
+        top: 6px;
+    }
+
+    #pWord {
+        position: absolute;
+        left: 228px;
+        top: 38px;
+    }
+
+    .input-sm {
+        height: 20px;
+        padding: 5px 10px;
+        font-size: 12px;
+        line-height: 1.5;
+        border-radius: 3px;
+        position: absolute;
+        left: 228px;
+    }
+
+    .btn_success {
+        color: #fff;
+        background-color: #5cb85c;
+        border-color: #4cae4c;
+        position: absolute;
+        top: 42px;
+        left: 409px;
+    }
+
+    #welcome{
+        /*
+        position: relative;
+        top: 3px;
+    */
+        position: relative;
+        top: 55px;
+        left: -24px;
+    }
+
+
+    .flagdiv_width {
+        width: 50%;
+        position: relative;
+        top: -37px;
+        left: -50px;
+    }
+
+
+
+    #btn_undo{
+        position: absolute;
+        left: 935px;
+        z-index: 100;
+    }
+
+    #btn_redo{
+        position: absolute;
+        left: 964px;
+        top: 71px;
+    }
+
+    .undo_redo {
+        position: absolute;
+        left: 952px;
+        top: 71px;
+    }
+
+    .beer_info{
+        background-color: #e3e3e3;
+        position: fixed;
+        top: 214px;
+        left: 50%;
+        width: 250px;
+        margin-left: -125px;
+    }
+
+    .beer_wine {
+        position: fixed;
+        top: 230px;
+        left: 500px;
+        width: 75px;
+        height: 75px;
+    }
+
+    .btn_close {
+        position: fixed;
+        left: 652px;
+        top: 220px;
+    }
+
+}
